@@ -1,0 +1,109 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,body {
+    height: 100vh;
+    font-family: 'Playfair Display SC', serif;
+  }
+  
+  body {
+    background-image: url("https://picsum.photos/id/10/1768/768?grayscale");
+    
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1#logo {
+    position: relative;
+    top: 100px;
+    color: #1B42AD;
+  }
+  form {
+    opacity: .7;
+    text-align: center;
+    margin: 150px 0;
+    background-color: #1B42AD;
+    padding: 40px 25px;
+    border-radius: 14px;
+    
+  }
+  
+  form .bloco {
+    margin-bottom: 20px;
+  }
+  
+  form .bloco label {
+    font-size: 20px;
+    color: white;
+  }
+  
+  form .bloco input {
+    border-radius: 13px;
+    transition: .5s;
+    opacity: .6;
+    background-color: #2860FA;
+    width: 100%;
+    display: block;
+    margin-top: 8px;
+    padding: 7px;
+    font-size: 16px;
+    color: white;
+    border-radius: 0,5px;
+    border: 1px solid rgba(189, 255, 249, 0.493);
+    outline-color:   rgba(189, 255, 249, 0.493);
+  }
+  form .bloco input:hover {
+    background-color: #142F7A;
+  }
+  
+  form .btn-login {
+    font-size: 17px;
+    display: block;
+    min-width: 120px;
+    border: none;
+    background-color:#142F7A;
+    color: white;
+    border-radius: 25px;
+    margin: auto;
+    padding: 7px;
+    transition: 1s;
+  }
+  form .btn-login:hover, a#cadastro:hover {
+      background-color: #5671BB;
+  }
+  a#cadastro {
+      top: 19px;
+      padding: 8px;
+      padding-left: 17px;
+      padding-right: 17px;
+      transition: 1s;
+      font-size: 17px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      border-radius: 25px;
+      background-color: #142F7A;
+  }
+  footer {
+      text-align: center;
+      color: white;
+      padding-bottom: 10px;
+  }
+  footer a {
+      text-decoration: none;
+      color: white;
+  }
+  footer a:hover {
+      text-decoration: underline;
+  }

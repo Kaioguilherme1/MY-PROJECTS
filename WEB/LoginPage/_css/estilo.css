@@ -6,13 +6,20 @@
     margin: 0;
     padding: 0;
   }
-  
+ 
   html,body {
     height: 100vh;
     font-family: 'Playfair Display SC', serif;
+    --cor-font: rgb(255,255,255);
+    --cor-tema1: #0433BF;
+    --cor-tema2: #0D378C;
+    --cor-unique:#174FBF;
+    --cor-base1: #27A4F2;
+    --cor-base2: #23C7D9;
   }
   
   body {
+    
     background-image: url("https://picsum.photos/id/10/1768/768");
     
   }
@@ -26,13 +33,13 @@
   h1#logo {
     position: relative;
     top: 100px;
-    color: #1B42AD;
+    color: var(--cor-unique);
   }
   form {
-    opacity: .7;
-    text-align: center;
-    margin: 150px 0;
-    background-color: #1B42AD;
+    opacity: .9;
+    text-align: left;
+    margin: 100px 0;
+    background-color: var(--cor-unique);
     padding: 40px 25px;
     border-radius: 14px;
     
@@ -44,44 +51,45 @@
   
   form .bloco label {
     font-size: 20px;
-    color: white;
+    color: var(--cor-font);
   }
   
   form .bloco input {
     border-radius: 13px;
     transition: .5s;
     opacity: .6;
-    background-color: #2860FA;
+    background-color: var(--cor-tema1);
     width: 100%;
     display: block;
     margin-top: 8px;
     padding: 7px;
     font-size: 16px;
-    color: white;
+    color: var(--cor-font);
     border-radius: 0,5px;
-    border: 1px solid rgba(189, 255, 249, 0.493);
-    outline-color:   rgba(189, 255, 249, 0.493);
+    border: 1px solid var(--cor-unique);
+    outline-color:   var(--cor-tema1);
   }
   form .bloco input:hover {
-    background-color: #142F7A;
+    background-color: var(--cor-tema2);
   }
   
-  form .btn-login {
+  form .btn {
     font-size: 17px;
     display: block;
     min-width: 120px;
     border: none;
-    background-color:#142F7A;
-    color: white;
+    background-color: var(--cor-tema1);
+    color: var(--cor-font);
     border-radius: 25px;
     margin: auto;
     padding: 7px;
     transition: 1s;
   }
-  form .btn-login:hover, a#cadastro:hover {
-      background-color: #5671BB;
+  form .btn:hover, a#cadastro:hover {
+      background-color: var(--cor-tema2);
   }
   a#cadastro {
+      text-align: center;
       top: 19px;
       padding: 8px;
       padding-left: 17px;
@@ -91,18 +99,18 @@
       position: relative;
       text-align: center;
       text-decoration: none;
-      color: white;
+      color: var(--cor-font);
       border-radius: 25px;
-      background-color: #142F7A;
+      background-color: var(--cor-tema1);
   }
   footer {
       text-align: center;
-      color: white;
+      color: var(--cor-font);
       padding-bottom: 10px;
   }
   footer a {
       text-decoration: none;
-      color: white;
+      color: var(--cor-font);
   }
   footer a:hover {
       text-decoration: underline;
